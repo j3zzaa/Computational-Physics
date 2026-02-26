@@ -29,3 +29,14 @@ plt.title('1D Bouncing Kinematics (Euler Method)')
 plt.grid(True)
 
 plt.savefig('trajectory.png')
+
+m = 1.0
+E = 0.5 * m * (v**2) + m * g * y
+
+plt.figure()
+plt.plot(t, E)
+plt.xlabel('Time (s)')
+plt.ylabel('Total Mechanical Energy (J)')
+plt.title('1D Energy Audit: System Loss and Algorithmic Drift')
+plt.grid(True)
+plt.savefig('energyAudit1D.png')
